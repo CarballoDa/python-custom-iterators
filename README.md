@@ -58,6 +58,7 @@ print(next(fib))  # 1
 
 ## Project Structure
 
+```markdown
 python-custom-iterators/
 │
 ├── custom_iterators/
@@ -68,7 +69,7 @@ python-custom-iterators/
 ├── README.md
 ├── pyproject.toml
 └── LICENSE
-
+```
 ## Running Doctest
 
 ```bash
