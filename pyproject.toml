@@ -1,13 +1,27 @@
-[project]
-name = "custom_iterators"
-version = "1.0.0"
-description = "A collection of educational custom iterator classes in Python."
-authors = [
-    { name = "David", email = "carballod@gmail.com.com" }
-]
-readme = "README.md"
-requires-python = ">=3.8"
-license = { text = "MIT" }
+from .iterators import (
+    SimpleCounter,
+    ReverseList,
+    StepIterator,
+    Circular,
+    InfiniteEvenNumbers,
+    RestartingIterator,
+    MapIterator,
+    ZipIterator,
+    WindowIterator,
+    FibonacciIterator,
+)
 
-[project.urls]
-Homepage = "https://github.com/CarballoDa/python-custom-iterators"
+__all__ = [
+    "SimpleCounter",
+    "ReverseList",
+    "StepIterator",
+    "Circular",
+    "InfiniteEvenNumbers",
+    "RestartingIterator",
+    "MapIterator",
+    "ZipIterator",
+    "WindowIterator",
+    "FibonacciIterator",
+]
+
+__version__ = "1.0.0"
