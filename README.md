@@ -66,10 +66,43 @@ python-custom-iterators/
 │   ├── iterators.py
 │
 ├── tests/
+│   ├── test_simple_counter.py
+│   ├── test_reverse_list.py
+│   ├── test_step_iterator.py
+│   ├── test_circular.py
+│   ├── test_infinite_even_numbers.py
+│   ├── test_restarting_iterator.py
+│   ├── test_map_iterator.py
+│   ├── test_zip_iterator.py
+│   ├── test_window_iterator.py
+│   └── test_fibonacci_iterator.py
 ├── README.md
 ├── pyproject.toml
 └── LICENSE
+
+## Running Pytests
+
+This project includes a full test suite located in the `tests/` directory.  
+Each iterator has its own dedicated test file, following a clear and modular structure.
+
+To run all tests:
+
+```bash
+pytest
 ```
+
+For a more detailed output:
+
+```bash
+pytest -v
+```
+
+To run only doctests embedded in the iterator classes:
+
+```bash
+pytest --doctest-glob="*.py"
+```
+
 ## Running Doctest
 
 ```bash
